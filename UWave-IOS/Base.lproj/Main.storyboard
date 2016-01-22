@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="7oL-d4-wWc">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="yF7-Y5-eq0">
+            <objects>
+                <viewController id="7oL-d4-wWc" customClass="UWViewController" customModule="UWave_IOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="OKZ-uQ-txo"/>
+                        <viewControllerLayoutGuide type="bottom" id="blH-sB-ig3"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="TbU-f3-8Ob">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="Ax2-Lq-eI6">
+                                <rect key="frame" x="36" y="75" width="248" height="132.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Ax2-Lq-eI6" secondAttribute="height" multiplier="15:8" id="1uy-MQ-4It"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iK1-oc-J6Z" customClass="UWPlayPauseButton" customModule="UWave_IOS" customModuleProvider="target">
+                                <rect key="frame" x="130" y="436" width="60" height="60"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="tintColor" red="0.82352941176470584" green="0.13725490196078433" blue="0.1803921568627451" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="iK1-oc-J6Z" secondAttribute="height" multiplier="1:1" id="Fnk-Pf-9Aq"/>
+                                    <constraint firstAttribute="width" constant="60" id="f70-N9-LLW"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CbB-5a-WyK">
+                                <rect key="frame" x="121" y="304" width="79" height="26.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s8C-1F-QWF">
+                                <rect key="frame" x="142.5" y="338.5" width="35.5" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.14901960780000001" green="0.14901960780000001" blue="0.14901960780000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="iK1-oc-J6Z" firstAttribute="centerX" secondItem="TbU-f3-8Ob" secondAttribute="centerX" id="0B3-ba-rtf"/>
+                            <constraint firstItem="s8C-1F-QWF" firstAttribute="top" secondItem="CbB-5a-WyK" secondAttribute="bottom" constant="8" id="1pl-ab-GEP"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="CbB-5a-WyK" secondAttribute="trailing" constant="104" id="DuL-S7-eAF"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Ax2-Lq-eI6" secondAttribute="trailing" constant="20" id="E7b-O4-qLt"/>
+                            <constraint firstItem="blH-sB-ig3" firstAttribute="top" secondItem="iK1-oc-J6Z" secondAttribute="bottom" constant="72" id="Er0-65-8HQ"/>
+                            <constraint firstItem="CbB-5a-WyK" firstAttribute="leading" secondItem="TbU-f3-8Ob" secondAttribute="leadingMargin" constant="105" id="RgT-RQ-oqZ"/>
+                            <constraint firstItem="iK1-oc-J6Z" firstAttribute="top" secondItem="s8C-1F-QWF" secondAttribute="bottom" constant="80" id="Rkp-Uo-BXz"/>
+                            <constraint firstItem="Ax2-Lq-eI6" firstAttribute="top" secondItem="OKZ-uQ-txo" secondAttribute="bottom" constant="55" id="Shb-vr-bts"/>
+                            <constraint firstItem="Ax2-Lq-eI6" firstAttribute="leading" secondItem="TbU-f3-8Ob" secondAttribute="leadingMargin" constant="20" id="gLh-jv-0bg"/>
+                            <constraint firstItem="Ax2-Lq-eI6" firstAttribute="centerX" secondItem="TbU-f3-8Ob" secondAttribute="centerX" id="nEx-MJ-Ftg"/>
+                            <constraint firstItem="s8C-1F-QWF" firstAttribute="centerX" secondItem="CbB-5a-WyK" secondAttribute="centerX" id="ycX-zA-ZLX"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="artistAlbumTitle" destination="s8C-1F-QWF" id="l7r-aO-SRu"/>
+                        <outlet property="playButton" destination="iK1-oc-J6Z" id="ini-EU-NlL"/>
+                        <outlet property="songTitle" destination="CbB-5a-WyK" id="djm-RC-cog"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cwb-Vw-5MC" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="218" y="220"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="logo.png" width="316" height="221"/>
+    </resources>
+</document>

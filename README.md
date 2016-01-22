@@ -1,1 +1,1 @@
-# UWave-iOS-App
+# UWave-IOS
