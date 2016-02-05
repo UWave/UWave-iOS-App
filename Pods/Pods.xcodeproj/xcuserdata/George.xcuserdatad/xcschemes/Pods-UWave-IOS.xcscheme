@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'CB6C758FD2342F7C696424BF'
+               BlueprintIdentifier = 'A9A9937A64B56CD74AAC5B3F'
                BlueprintName = 'Pods-UWave-IOS'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'Pods_UWave_IOS.framework'>

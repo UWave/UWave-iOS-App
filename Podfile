@@ -5,7 +5,8 @@ use_frameworks!
 
 target 'UWave-IOS' do
 
-pod 'AFNetworking'
+pod 'Alamofire'
+pod 'AFSoundManager'
 
 end
 

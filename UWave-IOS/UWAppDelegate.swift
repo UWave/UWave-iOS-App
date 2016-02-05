@@ -17,9 +17,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         
         //initializes UWRadioPlayer
-        UWRadioPlayer.sharedInstance
-        
+        UWRadioPlayer.sharedInstance()
+        UIApplication.sharedApplication().beginReceivingRemoteControlEvents()
+        self.becomeFirstResponder()
         // Override point for customization after application launch.
+        return true
+    }
+    
+    override func canBecomeFirstResponder() -> Bool {
         return true
     }
 
@@ -34,15 +39,34 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
     func applicationWillEnterForeground(application: UIApplication) {
+        NSNotificationCenter.defaultCenter().postNotificationName(UWNewSongNotification, object: nil)
         // Called as part of the transition from the background to the inactive state; here you can undo many of the changes made on entering the background.
     }
 
     func applicationDidBecomeActive(application: UIApplication) {
+        NSNotificationCenter.defaultCenter().postNotificationName(UWNewSongNotification, object: nil)
         // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
     }
 
     func applicationWillTerminate(application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+    }
+    
+    override func remoteControlReceivedWithEvent(event: UIEvent?) {
+        if (event?.type == .RemoteControl) {
+            if (event?.subtype == .RemoteControlPause) {
+                UWRadioPlayer.sharedInstance().pause()
+            }
+            else if (event?.subtype == .RemoteControlPlay) {
+                UWRadioPlayer.sharedInstance().play()
+            }
+            else if (event?.subtype == .RemoteControlTogglePlayPause) {
+                UWRadioPlayer.sharedInstance().toggle()
+            }
+            else if (event?.subtype == .RemoteControlStop) {
+                UWRadioPlayer.sharedInstance().pause()
+            }
+        }
     }
 
 

@@ -2,7 +2,7 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:UWave-IOS.xcodeproj">
+      location = "group:/Users/George/Happiness/UWave-iOS-App/UWave-iOS-App.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Pods/Pods.xcodeproj">

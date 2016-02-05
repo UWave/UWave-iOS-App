@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import RSPlayPauseButton
 
 class UWViewController: UIViewController, UWPlayPauseDelegate {
 
@@ -28,35 +27,39 @@ class UWViewController: UIViewController, UWPlayPauseDelegate {
         self.playButton.delegate = self
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "updateMetadata:", name: UWNewSongNotification, object: nil)
         
-//        self.networkingEngine.songStream { (results) -> Void in
-//            print(results)
-//        }
-
-        // Do any additional setup after loading the view, typically from a nib.
-        //playButton.setTitle("Play", forState: UIControlState.Normal)
+        self.updateMetadata(NSNotification(name: "Nil", object: nil))
     }
     
     func updateMetadata(notification: NSNotification) {
-        self.networkingEngine.songMetadata { (results) -> Void in
-            self.currentSong = results
-            dispatch_async(dispatch_get_main_queue(), { () -> Void in
-                self.updateMetadata(results)
-            })
+        self.playButton.setPlaying(UWRadioPlayer.sharedInstance().currentlyPlaying())
+        
+        self.networkingEngine.songMetadata { (results, success) -> Void in
+            if (success) {
+                self.currentSong = results!
+                dispatch_async(dispatch_get_main_queue(), { () -> Void in
+                    self.songTitle.hidden = false;
+                    self.songTitle.hidden = false;
+                    self.updateMetadataLabel(results!)
+                })
+            }
+            else {
+                self.songTitle.hidden = true;
+                self.songTitle.hidden = true;
+            }
         }
     }
     
-    func updateMetadata(song: UWSongMetadata) {
+    func updateMetadataLabel(song: UWSongMetadata) {
         self.songTitle.text = song.title
         self.artistAlbumTitle.text = "\(song.artist) - \(song.album)"
     }
     
     func playPauseButton(button: UWPlayPauseButton, didToggle status: Bool) {
         if status == true {
-            UWRadioPlayer.sharedInstance.play()
+            UWRadioPlayer.sharedInstance().play()
         }
         else {
-            UWRadioPlayer.sharedInstance.pause()
-            UWRadioPlayer.sharedInstance.checkMetadata()
+            UWRadioPlayer.sharedInstance().pause()
         }
     }
     

@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import RSPlayPauseButton
 
 protocol UWPlayPauseDelegate: NSObjectProtocol {
     
@@ -26,7 +25,10 @@ class UWPlayPauseButton: AnimatablePlayButton {
         self.color = self.tintColor
         self.addTarget(self, action: "toggle:", forControlEvents: .TouchUpInside)
         self.select()
+        
     }
+    
+    
 
     internal required init(frame: CGRect) {
         fatalError("init(frame:) has not been implemented")
