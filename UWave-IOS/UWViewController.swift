@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import MediaPlayer
 
 class UWViewController: UIViewController, UWPlayPauseDelegate {
 
@@ -39,6 +40,7 @@ class UWViewController: UIViewController, UWPlayPauseDelegate {
                 dispatch_async(dispatch_get_main_queue(), { () -> Void in
                     self.songTitle.hidden = false;
                     self.songTitle.hidden = false;
+                    self.updateMediaPlayer(results!)
                     self.updateMetadataLabel(results!)
                 })
             }
@@ -49,9 +51,55 @@ class UWViewController: UIViewController, UWPlayPauseDelegate {
         }
     }
     
+    func updateMediaPlayer(song: UWSongMetadata) {
+        
+        let infoCenter = MPNowPlayingInfoCenter.defaultCenter()
+        
+        let artwork = MPMediaItemArtwork(image: UIImage(named: "swoosh-square 1024.png")!)
+        
+        infoCenter.nowPlayingInfo = [MPMediaItemPropertyTitle : song.title,
+                                     MPMediaItemPropertyArtist : song.artist,
+                                     MPMediaItemPropertyAlbumTitle : song.album,
+                                     MPMediaItemPropertyArtwork : artwork];
+        let commandCenter = MPRemoteCommandCenter.sharedCommandCenter()
+        let rewind = commandCenter.seekBackwardCommand
+        rewind.enabled = false
+        rewind.addTargetWithHandler { (command) -> MPRemoteCommandHandlerStatus in
+            return MPRemoteCommandHandlerStatus.Success
+        }
+        let forward = commandCenter.seekForwardCommand
+        
+        forward.addTargetWithHandler { (command) -> MPRemoteCommandHandlerStatus in
+            return .Success
+        }
+        forward.enabled = false
+        let play = commandCenter.playCommand
+        play.addTargetWithHandler { (command) -> MPRemoteCommandHandlerStatus in
+//            self.playPauseButton(self.playButton, didToggle: true)
+            return .Success
+        }
+        
+        let pause = commandCenter.pauseCommand
+        pause.addTargetWithHandler { (command) -> MPRemoteCommandHandlerStatus in
+//            self.playPauseButton(self.playButton, didToggle: false)
+            return .Success
+        }
+    }
+    
     func updateMetadataLabel(song: UWSongMetadata) {
-        self.songTitle.text = song.title
-        self.artistAlbumTitle.text = "\(song.artist) - \(song.album)"
+        var aSong = song
+        if aSong.title.characters.count == 0 {
+            aSong.title = "(No title)"
+        }
+        self.songTitle.text = aSong.title
+        
+        if aSong.artist.characters.count == 0 {
+            aSong.artist = "(No artist)"
+        }
+        if aSong.album.characters.count == 0 {
+            aSong.album = "(No album)"
+        }
+        self.artistAlbumTitle.text = "\(aSong.artist) - \(aSong.album)"
     }
     
     func playPauseButton(button: UWPlayPauseButton, didToggle status: Bool) {

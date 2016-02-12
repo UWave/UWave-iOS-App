@@ -19,7 +19,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="SDO-RP-QZs">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo 1024" translatesAutoresizingMaskIntoConstraints="NO" id="SDO-RP-QZs">
                                 <rect key="frame" x="36" y="75" width="248" height="132.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="SDO-RP-QZs" secondAttribute="height" multiplier="15:8" id="sRv-vX-OuQ"/>
@@ -41,6 +41,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="logo.png" width="316" height="221"/>
+        <image name="logo 1024" width="1024" height="711"/>
     </resources>
 </document>

@@ -80,7 +80,6 @@ class UWRadioPlayer: NSObject, AVAudioSessionDelegate {
     
     override func observeValueForKeyPath(keyPath: String?, ofObject object: AnyObject?, change: [String : AnyObject]?, context: UnsafeMutablePointer<Void>) {
         if keyPath == "timedMetadata" {
-            "Changed song"
             NSNotificationCenter.defaultCenter().postNotificationName(UWNewSongNotification, object: nil)
         }
         else if keyPath == "status" {

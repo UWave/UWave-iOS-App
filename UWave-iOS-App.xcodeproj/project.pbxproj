@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5E4DF5541C6DA2260032C104 /* swoosh-square 120.png in Resources */ = {isa = PBXBuildFile; fileRef = 5E4DF5511C6DA2260032C104 /* swoosh-square 120.png */; };
+		5E4DF5551C6DA2260032C104 /* swoosh-square 180.png in Resources */ = {isa = PBXBuildFile; fileRef = 5E4DF5521C6DA2260032C104 /* swoosh-square 180.png */; };
+		5E4DF5561C6DA2260032C104 /* swoosh-square 1024.png in Resources */ = {isa = PBXBuildFile; fileRef = 5E4DF5531C6DA2260032C104 /* swoosh-square 1024.png */; };
+		5E4DF55A1C6DA3C50032C104 /* logo 1024.png in Resources */ = {isa = PBXBuildFile; fileRef = 5E4DF5591C6DA3C50032C104 /* logo 1024.png */; };
 		5E91BA0F1C5B22FD0098482A /* AnimatablePlayButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E91BA0E1C5B22FD0098482A /* AnimatablePlayButton.swift */; };
 		5ECDA92B1C225F6000B7BB9E /* UWAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ECDA92A1C225F6000B7BB9E /* UWAppDelegate.swift */; };
 		5ECDA92D1C225F6000B7BB9E /* UWViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ECDA92C1C225F6000B7BB9E /* UWViewController.swift */; };
@@ -14,19 +18,6 @@
 		5ECDA9321C225F6000B7BB9E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5ECDA9311C225F6000B7BB9E /* Assets.xcassets */; };
 		5ECDA9351C225F6000B7BB9E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5ECDA9331C225F6000B7BB9E /* LaunchScreen.storyboard */; };
 		5ECDA93D1C22601400B7BB9E /* UWRadioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ECDA93C1C22601400B7BB9E /* UWRadioPlayer.swift */; };
-		5ECDA9821C22605700B7BB9E /* Icon-60.png in Resources */ = {isa = PBXBuildFile; fileRef = 5ECDA9751C22605700B7BB9E /* Icon-60.png */; };
-		5ECDA9831C22605700B7BB9E /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = 5ECDA9761C22605700B7BB9E /* Icon-72.png */; };
-		5ECDA9841C22605700B7BB9E /* Icon-72@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5ECDA9771C22605700B7BB9E /* Icon-72@2x.png */; };
-		5ECDA9851C22605700B7BB9E /* Icon-Small-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 5ECDA9781C22605700B7BB9E /* Icon-Small-50.png */; };
-		5ECDA9861C22605700B7BB9E /* Icon-Small-50@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5ECDA9791C22605700B7BB9E /* Icon-Small-50@2x.png */; };
-		5ECDA9871C22605700B7BB9E /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5ECDA97A1C22605700B7BB9E /* Icon.png */; };
-		5ECDA9881C22605700B7BB9E /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5ECDA97B1C22605700B7BB9E /* Icon@2x.png */; };
-		5ECDA9891C22605700B7BB9E /* iTunesArtwork.png in Resources */ = {isa = PBXBuildFile; fileRef = 5ECDA97C1C22605700B7BB9E /* iTunesArtwork.png */; };
-		5ECDA98A1C22605700B7BB9E /* iTunesArtwork@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5ECDA97D1C22605700B7BB9E /* iTunesArtwork@2x.png */; };
-		5ECDA98B1C22605700B7BB9E /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 5ECDA97E1C22605700B7BB9E /* logo.png */; };
-		5ECDA98C1C22605700B7BB9E /* swoosh.png in Resources */ = {isa = PBXBuildFile; fileRef = 5ECDA97F1C22605700B7BB9E /* swoosh.png */; };
-		5ECDA98D1C22605700B7BB9E /* UWavePauseButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 5ECDA9801C22605700B7BB9E /* UWavePauseButton.png */; };
-		5ECDA98E1C22605700B7BB9E /* UWavePlayButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 5ECDA9811C22605700B7BB9E /* UWavePlayButton.png */; };
 		5ECDA9921C2295BA00B7BB9E /* UWPlayPauseButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ECDA9911C2295BA00B7BB9E /* UWPlayPauseButton.swift */; };
 		5ECDA9971C22A6ED00B7BB9E /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ECDA9961C22A6ED00B7BB9E /* UIColor.swift */; };
 		5ECDA9991C22AA2800B7BB9E /* UWApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ECDA9981C22AA2800B7BB9E /* UWApp.swift */; };
@@ -37,6 +28,10 @@
 
 /* Begin PBXFileReference section */
 		136E75A08E0CE99F32A5819A /* Pods_UWave_IOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UWave_IOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E4DF5511C6DA2260032C104 /* swoosh-square 120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "swoosh-square 120.png"; sourceTree = "<group>"; };
+		5E4DF5521C6DA2260032C104 /* swoosh-square 180.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "swoosh-square 180.png"; sourceTree = "<group>"; };
+		5E4DF5531C6DA2260032C104 /* swoosh-square 1024.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "swoosh-square 1024.png"; sourceTree = "<group>"; };
+		5E4DF5591C6DA3C50032C104 /* logo 1024.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo 1024.png"; sourceTree = "<group>"; };
 		5E91BA0E1C5B22FD0098482A /* AnimatablePlayButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AnimatablePlayButton.swift; path = "UWave-IOS/Frameworks/AnimatablePlayButton.swift"; sourceTree = "<group>"; };
 		5ECDA9271C225F6000B7BB9E /* UWave-iOS-App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "UWave-iOS-App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5ECDA92A1C225F6000B7BB9E /* UWAppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UWAppDelegate.swift; sourceTree = "<group>"; };
@@ -46,19 +41,6 @@
 		5ECDA9341C225F6000B7BB9E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5ECDA9361C225F6000B7BB9E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5ECDA93C1C22601400B7BB9E /* UWRadioPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UWRadioPlayer.swift; sourceTree = "<group>"; };
-		5ECDA9751C22605700B7BB9E /* Icon-60.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-60.png"; sourceTree = "<group>"; };
-		5ECDA9761C22605700B7BB9E /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72.png"; sourceTree = "<group>"; };
-		5ECDA9771C22605700B7BB9E /* Icon-72@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72@2x.png"; sourceTree = "<group>"; };
-		5ECDA9781C22605700B7BB9E /* Icon-Small-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small-50.png"; sourceTree = "<group>"; };
-		5ECDA9791C22605700B7BB9E /* Icon-Small-50@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small-50@2x.png"; sourceTree = "<group>"; };
-		5ECDA97A1C22605700B7BB9E /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
-		5ECDA97B1C22605700B7BB9E /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
-		5ECDA97C1C22605700B7BB9E /* iTunesArtwork.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iTunesArtwork.png; sourceTree = "<group>"; };
-		5ECDA97D1C22605700B7BB9E /* iTunesArtwork@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iTunesArtwork@2x.png"; sourceTree = "<group>"; };
-		5ECDA97E1C22605700B7BB9E /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
-		5ECDA97F1C22605700B7BB9E /* swoosh.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = swoosh.png; sourceTree = "<group>"; };
-		5ECDA9801C22605700B7BB9E /* UWavePauseButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = UWavePauseButton.png; sourceTree = "<group>"; };
-		5ECDA9811C22605700B7BB9E /* UWavePlayButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = UWavePlayButton.png; sourceTree = "<group>"; };
 		5ECDA9911C2295BA00B7BB9E /* UWPlayPauseButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UWPlayPauseButton.swift; sourceTree = "<group>"; };
 		5ECDA9961C22A6ED00B7BB9E /* UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		5ECDA9981C22AA2800B7BB9E /* UWApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UWApp.swift; sourceTree = "<group>"; };
@@ -114,19 +96,10 @@
 		5ECDA9741C22605700B7BB9E /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				5ECDA9751C22605700B7BB9E /* Icon-60.png */,
-				5ECDA9761C22605700B7BB9E /* Icon-72.png */,
-				5ECDA9771C22605700B7BB9E /* Icon-72@2x.png */,
-				5ECDA9781C22605700B7BB9E /* Icon-Small-50.png */,
-				5ECDA9791C22605700B7BB9E /* Icon-Small-50@2x.png */,
-				5ECDA97A1C22605700B7BB9E /* Icon.png */,
-				5ECDA97B1C22605700B7BB9E /* Icon@2x.png */,
-				5ECDA97C1C22605700B7BB9E /* iTunesArtwork.png */,
-				5ECDA97D1C22605700B7BB9E /* iTunesArtwork@2x.png */,
-				5ECDA97E1C22605700B7BB9E /* logo.png */,
-				5ECDA97F1C22605700B7BB9E /* swoosh.png */,
-				5ECDA9801C22605700B7BB9E /* UWavePauseButton.png */,
-				5ECDA9811C22605700B7BB9E /* UWavePlayButton.png */,
+				5E4DF5511C6DA2260032C104 /* swoosh-square 120.png */,
+				5E4DF5521C6DA2260032C104 /* swoosh-square 180.png */,
+				5E4DF5531C6DA2260032C104 /* swoosh-square 1024.png */,
+				5E4DF5591C6DA3C50032C104 /* logo 1024.png */,
 			);
 			path = Images;
 			sourceTree = "<group>";
@@ -239,6 +212,7 @@
 				TargetAttributes = {
 					5ECDA9261C225F6000B7BB9E = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = BQCH3H24L7;
 					};
 				};
 			};
@@ -265,22 +239,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5ECDA98E1C22605700B7BB9E /* UWavePlayButton.png in Resources */,
-				5ECDA98B1C22605700B7BB9E /* logo.png in Resources */,
-				5ECDA9871C22605700B7BB9E /* Icon.png in Resources */,
 				5ECDA9351C225F6000B7BB9E /* LaunchScreen.storyboard in Resources */,
-				5ECDA9851C22605700B7BB9E /* Icon-Small-50.png in Resources */,
-				5ECDA9861C22605700B7BB9E /* Icon-Small-50@2x.png in Resources */,
-				5ECDA9831C22605700B7BB9E /* Icon-72.png in Resources */,
-				5ECDA98D1C22605700B7BB9E /* UWavePauseButton.png in Resources */,
-				5ECDA98C1C22605700B7BB9E /* swoosh.png in Resources */,
-				5ECDA9841C22605700B7BB9E /* Icon-72@2x.png in Resources */,
-				5ECDA9891C22605700B7BB9E /* iTunesArtwork.png in Resources */,
-				5ECDA98A1C22605700B7BB9E /* iTunesArtwork@2x.png in Resources */,
+				5E4DF5561C6DA2260032C104 /* swoosh-square 1024.png in Resources */,
+				5E4DF5551C6DA2260032C104 /* swoosh-square 180.png in Resources */,
+				5E4DF5541C6DA2260032C104 /* swoosh-square 120.png in Resources */,
 				5ECDA9321C225F6000B7BB9E /* Assets.xcassets in Resources */,
-				5ECDA9821C22605700B7BB9E /* Icon-60.png in Resources */,
+				5E4DF55A1C6DA3C50032C104 /* logo 1024.png in Resources */,
 				5ECDA9301C225F6000B7BB9E /* Main.storyboard in Resources */,
-				5ECDA9881C22605700B7BB9E /* Icon@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -462,8 +427,9 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "UWave-IOS/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "HD.UWave-iOS-App";
+				PRODUCT_BUNDLE_IDENTIFIER = "HappDev.UWave-iOS-App";
 				PRODUCT_NAME = "UWave-iOS-App";
 				PROVISIONING_PROFILE = "";
 			};
@@ -477,8 +443,9 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "UWave-IOS/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "HD.UWave-iOS-App";
+				PRODUCT_BUNDLE_IDENTIFIER = "HappDev.UWave-iOS-App";
 				PRODUCT_NAME = "UWave-iOS-App";
 				PROVISIONING_PROFILE = "";
 			};
