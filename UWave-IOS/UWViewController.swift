@@ -55,7 +55,7 @@ class UWViewController: UIViewController, UWPlayPauseDelegate {
         
         let infoCenter = MPNowPlayingInfoCenter.defaultCenter()
         
-        let artwork = MPMediaItemArtwork(image: UIImage(named: "swoosh-square 1024.png")!)
+        let artwork = MPMediaItemArtwork(image: UIImage(named: "swoosh-square 1024")!)
         
         infoCenter.nowPlayingInfo = [MPMediaItemPropertyTitle : song.title,
                                      MPMediaItemPropertyArtist : song.artist,

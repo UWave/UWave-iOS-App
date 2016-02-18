@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
    LastUpgradeVersion = "0720"
-   version = "1.3">
+   version = "1.8">
    <BuildAction
       parallelizeBuildables = "YES"
       buildImplicitDependencies = "YES">
@@ -17,8 +17,8 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "5ECDA9261C225F6000B7BB9E"
                BuildableName = "UWave-iOS-App.app"
-               BlueprintName = "UWave-iOS-App"
-               ReferencedContainer = "container:UWave-iOS-App.xcodeproj">
+               BlueprintName = "UWave Radio"
+               ReferencedContainer = "container:UWave Radio.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -35,8 +35,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "5ECDA9261C225F6000B7BB9E"
             BuildableName = "UWave-iOS-App.app"
-            BlueprintName = "UWave-iOS-App"
-            ReferencedContainer = "container:UWave-iOS-App.xcodeproj">
+            BlueprintName = "UWave Radio"
+            ReferencedContainer = "container:UWave Radio.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -58,8 +58,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "5ECDA9261C225F6000B7BB9E"
             BuildableName = "UWave-iOS-App.app"
-            BlueprintName = "UWave-iOS-App"
-            ReferencedContainer = "container:UWave-iOS-App.xcodeproj">
+            BlueprintName = "UWave Radio"
+            ReferencedContainer = "container:UWave Radio.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -77,8 +77,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "5ECDA9261C225F6000B7BB9E"
             BuildableName = "UWave-iOS-App.app"
-            BlueprintName = "UWave-iOS-App"
-            ReferencedContainer = "container:UWave-iOS-App.xcodeproj">
+            BlueprintName = "UWave Radio"
+            ReferencedContainer = "container:UWave Radio.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
@@ -87,6 +87,7 @@
    </AnalyzeAction>
    <ArchiveAction
       buildConfiguration = "Release"
+      customArchiveName = "UWave Radio"
       revealArchiveInOrganizer = "YES">
    </ArchiveAction>
 </Scheme>

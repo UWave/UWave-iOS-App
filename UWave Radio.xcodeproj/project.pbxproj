@@ -7,10 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5E4DF5541C6DA2260032C104 /* swoosh-square 120.png in Resources */ = {isa = PBXBuildFile; fileRef = 5E4DF5511C6DA2260032C104 /* swoosh-square 120.png */; };
-		5E4DF5551C6DA2260032C104 /* swoosh-square 180.png in Resources */ = {isa = PBXBuildFile; fileRef = 5E4DF5521C6DA2260032C104 /* swoosh-square 180.png */; };
-		5E4DF5561C6DA2260032C104 /* swoosh-square 1024.png in Resources */ = {isa = PBXBuildFile; fileRef = 5E4DF5531C6DA2260032C104 /* swoosh-square 1024.png */; };
-		5E4DF55A1C6DA3C50032C104 /* logo 1024.png in Resources */ = {isa = PBXBuildFile; fileRef = 5E4DF5591C6DA3C50032C104 /* logo 1024.png */; };
 		5E91BA0F1C5B22FD0098482A /* AnimatablePlayButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E91BA0E1C5B22FD0098482A /* AnimatablePlayButton.swift */; };
 		5ECDA92B1C225F6000B7BB9E /* UWAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ECDA92A1C225F6000B7BB9E /* UWAppDelegate.swift */; };
 		5ECDA92D1C225F6000B7BB9E /* UWViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ECDA92C1C225F6000B7BB9E /* UWViewController.swift */; };
@@ -28,12 +24,8 @@
 
 /* Begin PBXFileReference section */
 		136E75A08E0CE99F32A5819A /* Pods_UWave_IOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UWave_IOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5E4DF5511C6DA2260032C104 /* swoosh-square 120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "swoosh-square 120.png"; sourceTree = "<group>"; };
-		5E4DF5521C6DA2260032C104 /* swoosh-square 180.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "swoosh-square 180.png"; sourceTree = "<group>"; };
-		5E4DF5531C6DA2260032C104 /* swoosh-square 1024.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "swoosh-square 1024.png"; sourceTree = "<group>"; };
-		5E4DF5591C6DA3C50032C104 /* logo 1024.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo 1024.png"; sourceTree = "<group>"; };
 		5E91BA0E1C5B22FD0098482A /* AnimatablePlayButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AnimatablePlayButton.swift; path = "UWave-IOS/Frameworks/AnimatablePlayButton.swift"; sourceTree = "<group>"; };
-		5ECDA9271C225F6000B7BB9E /* UWave-iOS-App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "UWave-iOS-App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5ECDA9271C225F6000B7BB9E /* UWave Radio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "UWave Radio.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5ECDA92A1C225F6000B7BB9E /* UWAppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UWAppDelegate.swift; sourceTree = "<group>"; };
 		5ECDA92C1C225F6000B7BB9E /* UWViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UWViewController.swift; sourceTree = "<group>"; };
 		5ECDA92F1C225F6000B7BB9E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -75,7 +67,7 @@
 		5ECDA9281C225F6000B7BB9E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				5ECDA9271C225F6000B7BB9E /* UWave-iOS-App.app */,
+				5ECDA9271C225F6000B7BB9E /* UWave Radio.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -91,17 +83,6 @@
 				5ECDA9A71C22B56A00B7BB9E /* Supporting Files */,
 			);
 			path = "UWave-IOS";
-			sourceTree = "<group>";
-		};
-		5ECDA9741C22605700B7BB9E /* Images */ = {
-			isa = PBXGroup;
-			children = (
-				5E4DF5511C6DA2260032C104 /* swoosh-square 120.png */,
-				5E4DF5521C6DA2260032C104 /* swoosh-square 180.png */,
-				5E4DF5531C6DA2260032C104 /* swoosh-square 1024.png */,
-				5E4DF5591C6DA3C50032C104 /* logo 1024.png */,
-			);
-			path = Images;
 			sourceTree = "<group>";
 		};
 		5ECDA99C1C22AE7000B7BB9E /* Model */ = {
@@ -152,7 +133,6 @@
 		5ECDA9A71C22B56A00B7BB9E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				5ECDA9741C22605700B7BB9E /* Images */,
 				5ECDA9311C225F6000B7BB9E /* Assets.xcassets */,
 				5ECDA9361C225F6000B7BB9E /* Info.plist */,
 			);
@@ -180,9 +160,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		5ECDA9261C225F6000B7BB9E /* UWave-iOS-App */ = {
+		5ECDA9261C225F6000B7BB9E /* UWave Radio */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5ECDA9391C225F6000B7BB9E /* Build configuration list for PBXNativeTarget "UWave-iOS-App" */;
+			buildConfigurationList = 5ECDA9391C225F6000B7BB9E /* Build configuration list for PBXNativeTarget "UWave Radio" */;
 			buildPhases = (
 				7EE205E9433590BE211BC7CE /* Check Pods Manifest.lock */,
 				5ECDA9231C225F6000B7BB9E /* Sources */,
@@ -195,9 +175,9 @@
 			);
 			dependencies = (
 			);
-			name = "UWave-iOS-App";
+			name = "UWave Radio";
 			productName = "UWave-IOS";
-			productReference = 5ECDA9271C225F6000B7BB9E /* UWave-iOS-App.app */;
+			productReference = 5ECDA9271C225F6000B7BB9E /* UWave Radio.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -208,7 +188,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0720;
 				LastUpgradeCheck = 0720;
-				ORGANIZATIONNAME = HappinessDevelopment;
+				ORGANIZATIONNAME = HappDev;
 				TargetAttributes = {
 					5ECDA9261C225F6000B7BB9E = {
 						CreatedOnToolsVersion = 7.2;
@@ -216,7 +196,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 5ECDA9221C225F6000B7BB9E /* Build configuration list for PBXProject "UWave-iOS-App" */;
+			buildConfigurationList = 5ECDA9221C225F6000B7BB9E /* Build configuration list for PBXProject "UWave Radio" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -229,7 +209,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				5ECDA9261C225F6000B7BB9E /* UWave-iOS-App */,
+				5ECDA9261C225F6000B7BB9E /* UWave Radio */,
 			);
 		};
 /* End PBXProject section */
@@ -240,11 +220,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5ECDA9351C225F6000B7BB9E /* LaunchScreen.storyboard in Resources */,
-				5E4DF5561C6DA2260032C104 /* swoosh-square 1024.png in Resources */,
-				5E4DF5551C6DA2260032C104 /* swoosh-square 180.png in Resources */,
-				5E4DF5541C6DA2260032C104 /* swoosh-square 120.png in Resources */,
 				5ECDA9321C225F6000B7BB9E /* Assets.xcassets in Resources */,
-				5E4DF55A1C6DA3C50032C104 /* logo 1024.png in Resources */,
 				5ECDA9301C225F6000B7BB9E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -374,7 +350,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -412,7 +388,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -425,13 +401,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Jonathan Velazquez (59VCS59Y3L)";
 				INFOPLIST_FILE = "UWave-IOS/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "HappDev.UWave-iOS-App";
-				PRODUCT_NAME = "UWave-iOS-App";
-				PROVISIONING_PROFILE = "";
+				PRODUCT_NAME = "UWave Radio";
+				PROVISIONING_PROFILE = "e2361712-875a-4d02-9289-ae1e040ed3b8";
 			};
 			name = Debug;
 		};
@@ -441,20 +417,20 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Jonathan Velazquez (59VCS59Y3L)";
 				INFOPLIST_FILE = "UWave-IOS/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "HappDev.UWave-iOS-App";
-				PRODUCT_NAME = "UWave-iOS-App";
-				PROVISIONING_PROFILE = "";
+				PRODUCT_NAME = "UWave Radio";
+				PROVISIONING_PROFILE = "e2361712-875a-4d02-9289-ae1e040ed3b8";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		5ECDA9221C225F6000B7BB9E /* Build configuration list for PBXProject "UWave-iOS-App" */ = {
+		5ECDA9221C225F6000B7BB9E /* Build configuration list for PBXProject "UWave Radio" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5ECDA9371C225F6000B7BB9E /* Debug */,
@@ -463,7 +439,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5ECDA9391C225F6000B7BB9E /* Build configuration list for PBXNativeTarget "UWave-iOS-App" */ = {
+		5ECDA9391C225F6000B7BB9E /* Build configuration list for PBXNativeTarget "UWave Radio" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5ECDA93A1C225F6000B7BB9E /* Debug */,
