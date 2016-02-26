@@ -25,12 +25,32 @@ class UWViewController: UIViewController, UWPlayPauseDelegate {
         
         super.viewDidLoad()
         
+        
+        
+        
         self.playButton.delegate = self
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "updateMetadata:", name: UWNewSongNotification, object: nil)
         
         self.updateMetadata(NSNotification(name: "Nil", object: nil))
     }
     
+    @IBAction func EmailButtonClicked(sender: AnyObject) {
+        
+        
+        let alert = UIAlertController(title: "Give Feedback", message: "We love getting feedback and would lvoe to hear from you!", preferredStyle: .Alert)
+        
+        let yesAction = UIAlertAction(title: "Yes", style: .Default) { (action) -> Void in
+            EmailFeedbackController.sendFeedback()
+        }
+        
+        let noAction = UIAlertAction(title: "Cancel", style: .Cancel, handler: nil)
+        
+        alert.addAction(yesAction)
+        alert.addAction(noAction)
+        
+        self.presentViewController(alert, animated: true, completion: nil)
+        
+    }
     func updateMetadata(notification: NSNotification) {
         self.playButton.setPlaying(UWRadioPlayer.sharedInstance().currentlyPlaying())
         

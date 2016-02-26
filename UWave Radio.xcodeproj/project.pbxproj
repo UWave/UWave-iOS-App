@@ -7,7 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5E4516F51C8037FF007A60AD /* EmailFeedbackController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E4516F41C8037FF007A60AD /* EmailFeedbackController.m */; };
+		5E4516F91C803866007A60AD /* Appirater.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E4516F71C803866007A60AD /* Appirater.m */; };
 		5E91BA0F1C5B22FD0098482A /* AnimatablePlayButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E91BA0E1C5B22FD0098482A /* AnimatablePlayButton.swift */; };
+		5EA2762F1C80365D00B611D4 /* Pods-UWave Radio.debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 5EA2762D1C80365D00B611D4 /* Pods-UWave Radio.debug.xcconfig */; };
+		5EA276301C80365D00B611D4 /* Pods-UWave Radio.release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 5EA2762E1C80365D00B611D4 /* Pods-UWave Radio.release.xcconfig */; };
 		5ECDA92B1C225F6000B7BB9E /* UWAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ECDA92A1C225F6000B7BB9E /* UWAppDelegate.swift */; };
 		5ECDA92D1C225F6000B7BB9E /* UWViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ECDA92C1C225F6000B7BB9E /* UWViewController.swift */; };
 		5ECDA9301C225F6000B7BB9E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5ECDA92E1C225F6000B7BB9E /* Main.storyboard */; };
@@ -19,12 +23,19 @@
 		5ECDA9991C22AA2800B7BB9E /* UWApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ECDA9981C22AA2800B7BB9E /* UWApp.swift */; };
 		5ECDA99B1C22AA5D00B7BB9E /* UWNetworkingEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ECDA99A1C22AA5D00B7BB9E /* UWNetworkingEngine.swift */; };
 		5ECDA99E1C22AE7B00B7BB9E /* UWSongMetadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ECDA99D1C22AE7B00B7BB9E /* UWSongMetadata.swift */; };
-		F030C44D675C41FB02DF6C59 /* Pods_UWave_IOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 136E75A08E0CE99F32A5819A /* Pods_UWave_IOS.framework */; };
+		C8D3A317288A43BF47A6550F /* Pods_UWave_Radio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AA33F495EA19348A6DBE064 /* Pods_UWave_Radio.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		136E75A08E0CE99F32A5819A /* Pods_UWave_IOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UWave_IOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E4516F21C8037FE007A60AD /* UWave Radio-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UWave Radio-Bridging-Header.h"; sourceTree = "<group>"; };
+		5E4516F31C8037FF007A60AD /* EmailFeedbackController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmailFeedbackController.h; sourceTree = "<group>"; };
+		5E4516F41C8037FF007A60AD /* EmailFeedbackController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmailFeedbackController.m; sourceTree = "<group>"; };
+		5E4516F61C803866007A60AD /* Appirater.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Appirater.h; sourceTree = "<group>"; };
+		5E4516F71C803866007A60AD /* Appirater.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Appirater.m; sourceTree = "<group>"; };
+		5E4516F81C803866007A60AD /* AppiraterDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppiraterDelegate.h; sourceTree = "<group>"; };
 		5E91BA0E1C5B22FD0098482A /* AnimatablePlayButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AnimatablePlayButton.swift; path = "UWave-IOS/Frameworks/AnimatablePlayButton.swift"; sourceTree = "<group>"; };
+		5EA2762D1C80365D00B611D4 /* Pods-UWave Radio.debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = "Pods-UWave Radio.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UWave Radio/Pods-UWave Radio.debug.xcconfig"; sourceTree = "<group>"; };
+		5EA2762E1C80365D00B611D4 /* Pods-UWave Radio.release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = "Pods-UWave Radio.release.xcconfig"; path = "Pods/Target Support Files/Pods-UWave Radio/Pods-UWave Radio.release.xcconfig"; sourceTree = "<group>"; };
 		5ECDA9271C225F6000B7BB9E /* UWave Radio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "UWave Radio.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5ECDA92A1C225F6000B7BB9E /* UWAppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UWAppDelegate.swift; sourceTree = "<group>"; };
 		5ECDA92C1C225F6000B7BB9E /* UWViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UWViewController.swift; sourceTree = "<group>"; };
@@ -38,8 +49,7 @@
 		5ECDA9981C22AA2800B7BB9E /* UWApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UWApp.swift; sourceTree = "<group>"; };
 		5ECDA99A1C22AA5D00B7BB9E /* UWNetworkingEngine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UWNetworkingEngine.swift; sourceTree = "<group>"; };
 		5ECDA99D1C22AE7B00B7BB9E /* UWSongMetadata.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UWSongMetadata.swift; sourceTree = "<group>"; };
-		709240EAA9DFBF389CF30FF1 /* Pods-UWave-IOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UWave-IOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UWave-IOS/Pods-UWave-IOS.debug.xcconfig"; sourceTree = "<group>"; };
-		DC66C1A2A06E1BC13009FF1D /* Pods-UWave-IOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UWave-IOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-UWave-IOS/Pods-UWave-IOS.release.xcconfig"; sourceTree = "<group>"; };
+		8AA33F495EA19348A6DBE064 /* Pods_UWave_Radio.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UWave_Radio.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,7 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F030C44D675C41FB02DF6C59 /* Pods_UWave_IOS.framework in Frameworks */,
+				C8D3A317288A43BF47A6550F /* Pods_UWave_Radio.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,6 +145,12 @@
 			children = (
 				5ECDA9311C225F6000B7BB9E /* Assets.xcassets */,
 				5ECDA9361C225F6000B7BB9E /* Info.plist */,
+				5E4516F31C8037FF007A60AD /* EmailFeedbackController.h */,
+				5E4516F41C8037FF007A60AD /* EmailFeedbackController.m */,
+				5E4516F61C803866007A60AD /* Appirater.h */,
+				5E4516F71C803866007A60AD /* Appirater.m */,
+				5E4516F81C803866007A60AD /* AppiraterDelegate.h */,
+				5E4516F21C8037FE007A60AD /* UWave Radio-Bridging-Header.h */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -143,7 +159,7 @@
 			isa = PBXGroup;
 			children = (
 				5E91BA0E1C5B22FD0098482A /* AnimatablePlayButton.swift */,
-				136E75A08E0CE99F32A5819A /* Pods_UWave_IOS.framework */,
+				8AA33F495EA19348A6DBE064 /* Pods_UWave_Radio.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -151,8 +167,8 @@
 		DE05A2D59E0DA258A7CE932B /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				709240EAA9DFBF389CF30FF1 /* Pods-UWave-IOS.debug.xcconfig */,
-				DC66C1A2A06E1BC13009FF1D /* Pods-UWave-IOS.release.xcconfig */,
+				5EA2762D1C80365D00B611D4 /* Pods-UWave Radio.debug.xcconfig */,
+				5EA2762E1C80365D00B611D4 /* Pods-UWave Radio.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -220,8 +236,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				5ECDA9351C225F6000B7BB9E /* LaunchScreen.storyboard in Resources */,
+				5EA2762F1C80365D00B611D4 /* Pods-UWave Radio.debug.xcconfig in Resources */,
 				5ECDA9321C225F6000B7BB9E /* Assets.xcassets in Resources */,
 				5ECDA9301C225F6000B7BB9E /* Main.storyboard in Resources */,
+				5EA276301C80365D00B611D4 /* Pods-UWave Radio.release.xcconfig in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -240,7 +258,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-UWave-IOS/Pods-UWave-IOS-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-UWave Radio/Pods-UWave Radio-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		7EE205E9433590BE211BC7CE /* Check Pods Manifest.lock */ = {
@@ -270,7 +288,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-UWave-IOS/Pods-UWave-IOS-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-UWave Radio/Pods-UWave Radio-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -281,8 +299,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				5ECDA99B1C22AA5D00B7BB9E /* UWNetworkingEngine.swift in Sources */,
+				5E4516F91C803866007A60AD /* Appirater.m in Sources */,
 				5ECDA9921C2295BA00B7BB9E /* UWPlayPauseButton.swift in Sources */,
 				5ECDA9971C22A6ED00B7BB9E /* UIColor.swift in Sources */,
+				5E4516F51C8037FF007A60AD /* EmailFeedbackController.m in Sources */,
 				5ECDA93D1C22601400B7BB9E /* UWRadioPlayer.swift in Sources */,
 				5ECDA9991C22AA2800B7BB9E /* UWApp.swift in Sources */,
 				5ECDA99E1C22AE7B00B7BB9E /* UWSongMetadata.swift in Sources */,
@@ -397,9 +417,10 @@
 		};
 		5ECDA93A1C225F6000B7BB9E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 709240EAA9DFBF389CF30FF1 /* Pods-UWave-IOS.debug.xcconfig */;
+			baseConfigurationReference = 5EA2762D1C80365D00B611D4 /* Pods-UWave Radio.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Jonathan Velazquez (59VCS59Y3L)";
 				INFOPLIST_FILE = "UWave-IOS/Info.plist";
@@ -408,14 +429,17 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "HappDev.UWave-iOS-App";
 				PRODUCT_NAME = "UWave Radio";
 				PROVISIONING_PROFILE = "e2361712-875a-4d02-9289-ae1e040ed3b8";
+				SWIFT_OBJC_BRIDGING_HEADER = "UWave-IOS/UWave Radio-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		5ECDA93B1C225F6000B7BB9E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DC66C1A2A06E1BC13009FF1D /* Pods-UWave-IOS.release.xcconfig */;
+			baseConfigurationReference = 5EA2762E1C80365D00B611D4 /* Pods-UWave Radio.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Jonathan Velazquez (59VCS59Y3L)";
 				INFOPLIST_FILE = "UWave-IOS/Info.plist";
@@ -424,6 +448,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "HappDev.UWave-iOS-App";
 				PRODUCT_NAME = "UWave Radio";
 				PROVISIONING_PROFILE = "e2361712-875a-4d02-9289-ae1e040ed3b8";
+				SWIFT_OBJC_BRIDGING_HEADER = "UWave-IOS/UWave Radio-Bridging-Header.h";
 			};
 			name = Release;
 		};

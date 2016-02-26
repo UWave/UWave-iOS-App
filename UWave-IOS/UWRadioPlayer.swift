@@ -93,6 +93,7 @@ class UWRadioPlayer: NSObject, AVAudioSessionDelegate {
     
     func play() {
         player.play()
+        Appirater.userDidSignificantEvent(true)
     }
     
     func pause() {

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10102" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" initialViewController="8CJ-Zd-uRu">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" initialViewController="Ezy-Gs-khv">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10080"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
@@ -20,7 +20,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo 1024" translatesAutoresizingMaskIntoConstraints="NO" id="SDO-RP-QZs">
-                                <rect key="frame" x="36" y="75" width="248" height="132.5"/>
+                                <rect key="frame" x="36" y="84" width="248" height="132.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="SDO-RP-QZs" secondAttribute="height" multiplier="15:8" id="sRv-vX-OuQ"/>
                                 </constraints>
@@ -29,15 +29,35 @@
                         <color key="backgroundColor" red="0.14901960780000001" green="0.14901960780000001" blue="0.14901960780000001" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="SDO-RP-QZs" secondAttribute="trailing" constant="20" id="0Q3-bd-iTl"/>
-                            <constraint firstItem="SDO-RP-QZs" firstAttribute="top" secondItem="x5V-9Y-bqm" secondAttribute="bottom" constant="55" id="NBD-Li-c11"/>
+                            <constraint firstItem="SDO-RP-QZs" firstAttribute="top" secondItem="x5V-9Y-bqm" secondAttribute="bottom" constant="20" id="NBD-Li-c11"/>
                             <constraint firstItem="SDO-RP-QZs" firstAttribute="centerX" secondItem="D4w-St-QXf" secondAttribute="centerX" id="a1v-fa-0rN"/>
                             <constraint firstItem="SDO-RP-QZs" firstAttribute="leading" secondItem="D4w-St-QXf" secondAttribute="leadingMargin" constant="20" id="qh5-yi-0qe"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="r8l-7Z-Lpf"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ktD-n2-F0i" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="116.26666666666667" y="208.26666666666665"/>
+            <point key="canvasLocation" x="648" y="208"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="z1e-qB-ZhC">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Ezy-Gs-khv" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="oY8-DE-lzQ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.84705882349999995" green="0.1450980392" blue="0.18823529410000001" alpha="1" colorSpace="calibratedRGB"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="8CJ-Zd-uRu" kind="relationship" relationship="rootViewController" id="gTa-Gt-ljM"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6yl-wJ-yoj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="116" y="208"/>
         </scene>
     </scenes>
     <resources>

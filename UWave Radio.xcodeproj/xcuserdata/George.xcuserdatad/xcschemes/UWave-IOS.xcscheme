@@ -16,7 +16,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "5ECDA9261C225F6000B7BB9E"
-               BuildableName = "UWave-iOS-App.app"
+               BuildableName = "UWave Radio.app"
                BlueprintName = "UWave Radio"
                ReferencedContainer = "container:UWave Radio.xcodeproj">
             </BuildableReference>
@@ -34,7 +34,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "5ECDA9261C225F6000B7BB9E"
-            BuildableName = "UWave-iOS-App.app"
+            BuildableName = "UWave Radio.app"
             BlueprintName = "UWave Radio"
             ReferencedContainer = "container:UWave Radio.xcodeproj">
          </BuildableReference>
@@ -57,7 +57,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "5ECDA9261C225F6000B7BB9E"
-            BuildableName = "UWave-iOS-App.app"
+            BuildableName = "UWave Radio.app"
             BlueprintName = "UWave Radio"
             ReferencedContainer = "container:UWave Radio.xcodeproj">
          </BuildableReference>
@@ -76,7 +76,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "5ECDA9261C225F6000B7BB9E"
-            BuildableName = "UWave-iOS-App.app"
+            BuildableName = "UWave Radio.app"
             BlueprintName = "UWave Radio"
             ReferencedContainer = "container:UWave Radio.xcodeproj">
          </BuildableReference>
