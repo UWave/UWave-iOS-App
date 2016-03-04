@@ -10,8 +10,6 @@
 		5E4516F51C8037FF007A60AD /* EmailFeedbackController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E4516F41C8037FF007A60AD /* EmailFeedbackController.m */; };
 		5E4516F91C803866007A60AD /* Appirater.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E4516F71C803866007A60AD /* Appirater.m */; };
 		5E91BA0F1C5B22FD0098482A /* AnimatablePlayButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E91BA0E1C5B22FD0098482A /* AnimatablePlayButton.swift */; };
-		5EA2762F1C80365D00B611D4 /* Pods-UWave Radio.debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 5EA2762D1C80365D00B611D4 /* Pods-UWave Radio.debug.xcconfig */; };
-		5EA276301C80365D00B611D4 /* Pods-UWave Radio.release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 5EA2762E1C80365D00B611D4 /* Pods-UWave Radio.release.xcconfig */; };
 		5ECDA92B1C225F6000B7BB9E /* UWAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ECDA92A1C225F6000B7BB9E /* UWAppDelegate.swift */; };
 		5ECDA92D1C225F6000B7BB9E /* UWViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ECDA92C1C225F6000B7BB9E /* UWViewController.swift */; };
 		5ECDA9301C225F6000B7BB9E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5ECDA92E1C225F6000B7BB9E /* Main.storyboard */; };
@@ -203,7 +201,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0720;
-				LastUpgradeCheck = 0720;
+				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = HappDev;
 				TargetAttributes = {
 					5ECDA9261C225F6000B7BB9E = {
@@ -236,10 +234,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				5ECDA9351C225F6000B7BB9E /* LaunchScreen.storyboard in Resources */,
-				5EA2762F1C80365D00B611D4 /* Pods-UWave Radio.debug.xcconfig in Resources */,
 				5ECDA9321C225F6000B7BB9E /* Assets.xcassets in Resources */,
 				5ECDA9301C225F6000B7BB9E /* Main.storyboard in Resources */,
-				5EA276301C80365D00B611D4 /* Pods-UWave Radio.release.xcconfig in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

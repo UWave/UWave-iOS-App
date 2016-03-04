@@ -9,6 +9,7 @@
 import UIKit
 
 let UWNewSongNotification = "UWNewSongNotification"
+let UWFailedToStartNotification = "UWFailedToStartNotification"
 
 class UWApp: NSObject {
     

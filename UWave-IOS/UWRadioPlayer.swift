@@ -7,7 +7,6 @@
 //
 
 import Foundation
-import AFSoundManager
 import AVFoundation
 import MediaPlayer
 
@@ -15,28 +14,68 @@ class UWRadioPlayer: NSObject, AVAudioSessionDelegate {
     
     
     private static let radioPlayer = UWRadioPlayer()
-    private var player: AFSoundPlayback!
-//    private var playerItem = AVPlayerItem(URL: NSURL(string: "http://live.uwave.fm:8000/listen-128.mp3")!)
+    private var player: AVPlayer!
     private var mediaPlayer: MPMusicPlayerController!
     
     private var songData: UWSongMetadata?
     
     override init() {
         super.init()
+        setupPlayer()
+    }
+    
+    private var shouldPlayAfterReload = false
+    private var failedToStart = false
+    
+    var didEnterBackground = false
+    
+    private func setupPlayer() -> Bool {
+        if (self.player != nil) {
+            
+            if (didEnterBackground || failedToStart) {
+                self.player.currentItem?.removeObserver(self, forKeyPath: "timedMetadata")
+                self.player.removeObserver(self, forKeyPath: "status")
+                self.player.pause()
+                if (UIApplication.sharedApplication().applicationState == UIApplicationState.Active) {
+                    didEnterBackground = false
+                }
+                
+                
+            }
+            else {
+                return true
+            }
+        }
+        do {
+            try AVAudioSession.sharedInstance().setCategory(
+                AVAudioSessionCategoryPlayAndRecord,
+                withOptions: .DefaultToSpeaker)
+        } catch _ as NSError {
+            failedToStart = true
+            NSNotificationCenter.defaultCenter().postNotificationName(UWFailedToStartNotification, object: nil)
+        }
         
-        let item = AFSoundItem(streamingURL: NSURL(string: "http://live.uwave.fm:8000/listen-128.mp3")!)
-        self.player = AFSoundPlayback(item: item)
-        self.player.pause()
-        self.player.player.currentItem?.addObserver(self, forKeyPath: "timedMetadata", options: .New, context: nil)
-        self.player?.listenFeedbackUpdatesWithBlock(nil, andFinishedBlock: nil)
-//        self.player = AFSoundQueue(item: )
-//        player.addObserver(self, forKeyPath: "status", options: .New, context: nil)
-//        playerItem.addObserver(self, forKeyPath: "timedMetadata", options: .New, context: nil)
         
-//        [NSNoti addObserver: self
-//            selector: @selector (handlePlaybackStateChanged:)
-//        name: MixerHostAudioObjectPlaybackStateDidChangeNotification
-//        object: audioObject];
+        
+        
+        let item = AVPlayerItem(URL: NSURL(string: "http://live.uwave.fm:8000/listen-128.mp3")!)
+//        let item = AFSoundItem(streamingURL: NSURL(string: "http://live.uwave.fm:8000/listen-128.mp3")!)
+        self.player = nil
+        self.player = AVPlayer(playerItem: item)
+        if self.shouldPlayAfterReload {
+            self.player.play()
+            self.shouldPlayAfterReload = false
+        }
+        else {
+            self.pause()
+        }
+        self.player.currentItem?.addObserver(self, forKeyPath: "timedMetadata", options: .New, context: nil)
+        self.player.addObserver(self, forKeyPath: "status", options: .New, context: nil)
+        return false
+    }
+    
+    func songStalled(notification: NSNotification) {
+        print("Stalled")
     }
     
     func beginInterruption() {
@@ -44,8 +83,6 @@ class UWRadioPlayer: NSObject, AVAudioSessionDelegate {
     }
     
     func setSongData(data: UWSongMetadata) {
-        
-        
         
         
         songData = data
@@ -83,16 +120,18 @@ class UWRadioPlayer: NSObject, AVAudioSessionDelegate {
             NSNotificationCenter.defaultCenter().postNotificationName(UWNewSongNotification, object: nil)
         }
         else if keyPath == "status" {
-            if self.player.player.status == AVPlayerStatus.ReadyToPlay {
-                print("ready to play")
+            if self.player.status == AVPlayerStatus.Failed {
+                NSNotificationCenter.defaultCenter().postNotificationName(UWFailedToStartNotification, object: nil)
             }
         }
     }
     
     
-    
     func play() {
-        player.play()
+        shouldPlayAfterReload = true
+        if self.setupPlayer() {
+            self.player.play()
+        }
         Appirater.userDidSignificantEvent(true)
     }
     
@@ -101,7 +140,7 @@ class UWRadioPlayer: NSObject, AVAudioSessionDelegate {
     }
     
     func toggle() {
-        if player.player.rate > 0 {
+        if player.rate > 0 {
             pause()
         } else {
             play()
@@ -110,7 +149,8 @@ class UWRadioPlayer: NSObject, AVAudioSessionDelegate {
     
     
     func currentlyPlaying() -> Bool {
-        return player.player.rate > 0
+        if player == nil { return false; }
+        return player.rate > 0
     }
     
 }

@@ -26,7 +26,7 @@ class UWViewController: UIViewController, UWPlayPauseDelegate {
         super.viewDidLoad()
         
         
-        
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: "failedToStart:", name: UWFailedToStartNotification, object: nil)
         
         self.playButton.delegate = self
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "updateMetadata:", name: UWNewSongNotification, object: nil)
@@ -69,6 +69,11 @@ class UWViewController: UIViewController, UWPlayPauseDelegate {
                 self.songTitle.hidden = true;
             }
         }
+    }
+    
+    func failedToStart(notification: NSNotification) {
+        let alert = UIAlertController(title: "Oh no! 😳", message: "Something went wrong. Try pressing play again or restarting.", preferredStyle: .Alert)
+        self.presentViewController(alert, animated: true, completion: nil)
     }
     
     func updateMediaPlayer(song: UWSongMetadata) {
